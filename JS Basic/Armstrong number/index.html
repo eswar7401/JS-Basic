@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+     let sum = 0;
+const number = prompt('Enter a number: ');
+let a = number;
+while (a > 0) {
+    let remainder = a % 10;
+    sum += remainder * remainder * remainder;
+    a = (a / 10); 
+}
+if (sum == number) {
+    console.log(`its is an Armstrong number`);
+}
+else {
+    console.log(`it is not an Armstrong number.`);
+}
+    </script>
+</head>
+<body>
+    <h2> Armstrong number</h2>
+</body>
+</html>
